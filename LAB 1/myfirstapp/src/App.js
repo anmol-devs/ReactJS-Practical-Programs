@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+class student {
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  displayDetails(course, sem) {
+    console.log("Name: " + this.name);
+    console.log("Age: " + this.age);
+    console.log("Grade: " + this.grade);
+    console.log("Course: " + course);
+    console.log("Semester: " + sem);
+  }
 }
 
-export default App;
+const student1 = new student("Alice", 20, "A");
+student1.displayDetails("Computer Science", 3);

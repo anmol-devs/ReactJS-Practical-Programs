@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Clock from "./clock";
-// import Logger from "./Logger";
 
 class App extends Component {
   constructor(props) {
